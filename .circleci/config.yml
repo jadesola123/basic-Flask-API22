@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - checkout # Retrieve code from GitHub
-      # Create a venv, activate it then install the pip packages
+      # Create a venv, activate it, then install the pip packages
       - run:
           name: Install pip packages # name of this action
           command: |
@@ -19,4 +19,3 @@ jobs:
           command: |
             . venv/bin/activate
             pytest -v
-
