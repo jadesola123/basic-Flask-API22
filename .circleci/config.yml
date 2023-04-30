@@ -1,4 +1,4 @@
-version: 2.1 # CircleCI version
+version: 2 # CircleCI version
 jobs:
   build: # name of this job
     docker: # executor
@@ -6,7 +6,7 @@ jobs:
 
     steps:
       - checkout # Retrieve code from GitHub
-      # Create a venv, activate it then install the pip packages
+      # Create a venv, activate it, then install the pip packages
       - run:
           name: Install pip packages # name of this action
           command: |
