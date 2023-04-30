@@ -1,4 +1,4 @@
-version: 2 # CircleCI version
+version: 2.1 # CircleCI version
 jobs:
   build: # name of this job
     docker: # executor
